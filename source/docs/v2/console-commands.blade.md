@@ -44,7 +44,7 @@ This package also offers a simplified, tenant-aware version of `migrate:fresh`. 
 
 You may use it like this:
 
-```none
+```
 php artisan tenants:migrate-fresh --tenants=8075a580-1cb8-11e9-8822-49c5d8f8ff23
 ```
 
@@ -59,7 +59,7 @@ php artisan tenants:run email:send --tenants=8075a580-1cb8-11e9-8822-49c5d8f8ff2
 
 ## Tenant list {#tenant-list}
 
-```none
+```
 php artisan tenants:list
 Listing all tenants.
 [Tenant] id: dbe0b330-1a6e-11e9-b4c3-354da4b4f339 @ localhost
@@ -74,7 +74,7 @@ You may specify any amount of domains using `-d <domain>`. To set data during th
 
 For example:
 
-```none
+```
 php artisan tenants:create -d aaa.localhost -d bbb.localhost plan=free email=foo@test.local
 5f6dbfb8-41da-4398-a361-5342a98d81a0
 ```
